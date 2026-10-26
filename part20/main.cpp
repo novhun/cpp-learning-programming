@@ -151,7 +151,9 @@ public:
         std::cout << "| SKU    | Product Name                   | Price ($)  | Stock  |\n";
         std::cout << "+--------+--------------------------------+------------+--------+\n";
         std::cout << std::fixed << std::setprecision(2);
-        for (const auto& [sku, prod] : catalog_) {
+        for (const auto& entry : catalog_) {
+            const auto& sku = entry.first;
+            const auto& prod = entry.second;
             std::cout << "| " << std::left << std::setw(6) << sku 
                       << " | " << std::setw(30) << prod->getName()
                       << " | " << std::right << std::setw(10) << prod->getPrice()

@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/mrhun/Desktop/CPP-LESSON/part1",
-      "program": "/Users/mrhun/Desktop/CPP-LESSON/part1/build/Debug/outDebug"
+      "cwd": "/Users/mrhun/Desktop/CPP-LESSON/part20",
+      "program": "/Users/mrhun/Desktop/CPP-LESSON/part20/build/Debug/outDebug"
     }
   ]
 }
