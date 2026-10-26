@@ -113,6 +113,9 @@ Or using the master runner script:
 ./run.sh basic
 ```
 
+### Option 3: One-Click in IDE with C/C++ Runner
+Install the recommended **C/C++ Runner** extension (`franneck94.c-cpp-runner` from [Open-VSX](https://open-vsx.org/vscode/item?itemName=franneck94.c-cpp-runner)) to compile and run any lesson with a single click of the Play button in your editor!
+
 ---
 
 ## 6. Beginner Exercises

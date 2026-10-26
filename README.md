@@ -80,3 +80,33 @@ In `.vscode/settings.json`, your workspace is configured with strict compiler fl
 - `-Wshadow`: Warn whenever a local variable shadows another variable or parameter.
 - `-Wconversion -Wsign-conversion`: Flag unintended precision loss or signed/unsigned mismatches.
 - `-Wnull-dereference`: Flag potential null pointer dereferences at compile-time.
+
+---
+
+## Recommended IDE Extension: C/C++ Runner
+
+To compile, run, and debug any lesson with a single click inside the IDE, install the **C/C++ Runner** extension:
+
+- **Extension ID:** `franneck94.c-cpp-runner`
+- **Open-VSX Marketplace:** [franneck94.c-cpp-runner on Open-VSX](https://open-vsx.org/vscode/item?itemName=franneck94.c-cpp-runner)
+- **Author:** Jan Schaffranek (`franneck94`)
+
+### How to Install in the IDE:
+1. Open the Extensions sidebar (`Cmd + Shift + X` on macOS, or `Ctrl + Shift + X`).
+2. Search for:
+   ```text
+   franneck94.c-cpp-runner
+   ```
+3. Click **Install**.
+4. *(Alternative for offline/Open-VSX)*: Download the `.vsix` file from the [Open-VSX page](https://open-vsx.org/vscode/item?itemName=franneck94.c-cpp-runner), open the Extensions view (`Cmd+Shift+X`), click the **`...`** (Views and More Actions) menu at the top right, and choose **Install from VSIX...**.
+
+### Pre-configured Workspace Settings:
+This workspace is already pre-configured to work with `C/C++ Runner`:
+- [`.vscode/settings.json`](file:///Users/mrhun/Desktop/CPP-LESSON/.vscode/settings.json): Configured with `clang++`, `lldb`, and strict warning flags.
+- [`.vscode/launch.json`](file:///Users/mrhun/Desktop/CPP-LESSON/.vscode/launch.json): Pre-configured LLDB debug session launcher.
+- [`.vscode/extensions.json`](file:///Users/mrhun/Desktop/CPP-LESSON/.vscode/extensions.json): Automatically prompts you to install `franneck94.c-cpp-runner` when opening the folder.
+
+### Using C/C++ Runner:
+- Open any file (e.g. `basic/main.cpp` or `part1/main.cpp`).
+- Look at the bottom status bar for the **Build & Run** (gear/play) icon or click the Play button in the top right editor menu to compile and run with LLDB/Clang automatically!
+
