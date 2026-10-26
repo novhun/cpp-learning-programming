@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "C/C++: Build Active File (clang++)",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Wshadow",
+        "-Wformat=2",
+        "-Wcast-align",
+        "-Wconversion",
+        "-Wsign-conversion",
+        "-Wnull-dereference",
+        "-g3",
+        "-O0",
+        "${file}",
+        "-o",
+        "${workspaceFolder}/build/Debug/outDebug"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Compiles active C++ file with strict compiler flags to build/Debug/outDebug"
+    },
+    {
+      "type": "shell",
+      "label": "C/C++: Run Lesson via run.sh",
+      "command": "${workspaceFolder}/run.sh",
+      "args": ["all"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "detail": "Runs all 20 C++ lessons verification"
+    }
+  ]
+}
